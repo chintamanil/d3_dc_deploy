@@ -13,6 +13,10 @@ angular.module("d3_data").config ($routeProvider,$locationProvider) ->
 
   $routeProvider.when("/nvd3",
     templateUrl: "views/nvd3.html"
-    controller: "Nvd3Ctrl"
+    controller: "Nvd3Ctrl")
+
+  $routeProvider.when("/orbcsv",
+    templateUrl: "views/orbital_csv.html"
+    controller: "OrbitalCsvCtrl"
 
   ).otherwise redirectTo: "/"

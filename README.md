@@ -1,11 +1,21 @@
-# Yeoman-Angular-Haml
+# Angular Charts ztesting with D3, DCjs & C3js
 
-This seed project uses Yeoman with Angular and HAML. It's just 'yo angular' with CoffeeScript and HAML instead of JavaScript and HTML. See commit history for changes to Gruntfile.js for grunt-haml.
+This projects aims at testing vairios d3 chartin libraries like c3js [along with some directives for c3], and dcjs with crossfilter.
 
-See also: 
-
+Generator Used:
 * [generator-angular](https://github.com/yeoman/generator-angular)
 * http://jeff.konowit.ch/posts/yeoman-rails-angular/
+
+## Technologies
+
+* AngularJS
+* Bootstrap
+* d3
+* c3js
+* dc
+* coffeescript
+* haml
+* Grunt
 
 ## Assumptions
 
@@ -16,32 +26,18 @@ See also:
 
 ## Installation
 
-First make sure brew is current:
-      
-    brew update
 
-And same for nodejs
-    
-    brew upgrade node
-
-Install yeoman:
-
-    npm install -g yo grunt-cli bower
-    
-Install haml gem:
+Install haml  & sass gem:
 
     gem install haml
-    
-Install compass for SASS support:
-
     gem install compass
 
 Install dependencies:
-    
-    cd yeoman-angular-haml
+    ```bash
+    cd angular_c3_nvd3_crossfilter
     npm install
     bower install
-
+    ```
 ## Test (Karma)
 
     grunt test
@@ -49,9 +45,9 @@ Install dependencies:
 ## Run
 
 Launch the server:
-
+```
     grunt server
-
+```
 
 Edit app/view/main.html.haml and watch the LiveReload goodness!
 
