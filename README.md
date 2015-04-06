@@ -1,6 +1,6 @@
-# Angular Charts ztesting with D3, DCjs & C3js
+# Angular Charts experiments with D3, DCjs & C3js
 
-This projects aims at testing vairios d3 chartin libraries like c3js [along with some directives for c3], and dcjs with crossfilter.
+This projects aims at testing various d3 charting libraries like c3js [along with some directives for c3], and dcjs with crossfilter.
 
 Generator Used:
 * [generator-angular](https://github.com/yeoman/generator-angular)
