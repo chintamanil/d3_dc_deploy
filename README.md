@@ -33,11 +33,11 @@ Install haml  & sass gem:
     gem install compass
 
 Install dependencies:
-    ```bash
+
     cd angular_c3_nvd3_crossfilter
     npm install
     bower install
-    ```
+
 ## Test (Karma)
 
     grunt test
