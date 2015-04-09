@@ -1,15 +1,15 @@
 %general-navigation
 .hero-unit.post
-  %h1 'Dcjs!
+  %h1 'Dcjs2!
   %p You now have
 
-  %h2 Nasdaq 100 Index 1985/11/01-2012/06/29
+  %h2 Orbital Data
   .row
-    .dc-chart{"dc-chart" => "bubbleChart", "dc-color-domain" => "[-500, 500]", "dc-colors" => "colorbrewer.RdYlGn[9]", "dc-dimension" => "yearlyDimension", "dc-elastic-x" => "true", "dc-elastic-y" => "true", "dc-group" => "yearlyPerformanceGroup", "dc-height" => "250", "dc-margins" => "{top: 10, right: 50, bottom: 30, left: 40}", "dc-max-bubble-relative-size" => "0.3", "dc-options" => "bubbleChartOptions", "dc-r" => "d3.scale.linear().domain([0, 4000])", "dc-render-horizontal-grid-lines" => "true", "dc-render-label" => "true", "dc-render-title" => "true", "dc-render-vertical-grid-lines" => "true", "dc-transition-duration" => "1500", "dc-width" => "990", "dc-x" => "d3.scale.linear().domain([-2500, 2500])", "dc-x-axis-padding" => "500", "dc-x-axislabel" => "'Index Gain'", "dc-y" => "d3.scale.linear().domain([-100, 100])", "dc-y-axis-label" => "'Index Gain %'", "dc-y-axis-padding" => "100"}
-      %strong> Yearly Performance
-      (radius: fluctuation/index ratio, color: gain/loss)
-      %a.reset reset
-      .clearfix
+    -#.dc-chart{"dc-chart" => "bubbleChart", "dc-color-domain" => "[-500, 500]", "dc-colors" => "colorbrewer.RdYlGn[9]", "dc-dimension" => "yearlyDimension", "dc-elastic-x" => "true", "dc-elastic-y" => "true", "dc-group" => "yearlyPerformanceGroup", "dc-height" => "250", "dc-margins" => "{top: 10, right: 50, bottom: 30, left: 40}", "dc-max-bubble-relative-size" => "0.3", "dc-options" => "bubbleChartOptions", "dc-r" => "d3.scale.linear().domain([0, 4000])", "dc-render-horizontal-grid-lines" => "true", "dc-render-label" => "true", "dc-render-title" => "true", "dc-render-vertical-grid-lines" => "true", "dc-transition-duration" => "1500", "dc-width" => "990", "dc-x" => "d3.scale.linear().domain([-2500, 2500])", "dc-x-axis-padding" => "500", "dc-x-axislabel" => "'Index Gain'", "dc-y" => "d3.scale.linear().domain([-100, 100])", "dc-y-axis-label" => "'Index Gain %'", "dc-y-axis-padding" => "100"}
+    -#  %strong> Yearly Performance
+    -#  (radius: fluctuation/index ratio, color: gain/loss)
+    -#  %a.reset reset
+    -#  .clearfix
   .row
     %dc-select{"all-label" => "All quarters", "dc-dimension" => "quarter"}
   .row

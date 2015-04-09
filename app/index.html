@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/main.css -->
+        <link rel="stylesheet" type="text/css" href="//dc-js.github.io/dc.js/css/dc.css"/>
     <link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="components/components-font-awesome/css/font-awesome.min.css">
@@ -33,8 +34,11 @@
     <!-- Add your site or application content here -->
     <div class="container" ng-view></div>
 
+    <script src="components/lodash/dist/lodash.min.js"></script>
+    <script src="components/crossfilter/crossfilter.min.js"></script>
     <script src="components/d3/d3.min.js"></script>
     <script src="components/c3/c3.min.js"></script>
+    <script src="components/dcjs/dc.min.js"></script>
     <script src="components/angular/angular.min.js"></script>
     <script src="components/c3-angular/c3-angular.min.js"></script>
     <script src="components/angular-resource/angular-resource.min.js"></script>
@@ -45,12 +49,16 @@
     <script src="components/firebase/firebase.js"></script>
     <script src="components/angular-chart/angular-chart.js"></script>
     <script src="components/angular-ui-bootstrap/src/bootstrap-angular-ui.js"></script>
+    <script src="components/angular-dc/dist/angular-dc.min.js"></script>
+    <script src="components/colorbrewer.js"></script>
 
     <!-- build:js scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/graph-app-5.js"></script>
     <script src="scripts/controllers/orbital_csv.js"></script>
+    <script src="scripts/controllers/dcjs_plot.js"></script>
+    <script src="scripts/controllers/dcjs_plot2.js"></script>
     <script src="scripts/directives/general_footer.js"></script>
     <script src="scripts/directives/general_navigation.js"></script>
     <script src="scripts/config/routes.js"></script>
