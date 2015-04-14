@@ -1,4 +1,4 @@
-date,day.of.week,car.count,weather
+date,day_of_week,car_count,weather
 2010-01-01,friday,94.5,-0.1
 2010-01-02,saturday,108.4,-2.4
 2010-01-03,sunday,105.5,-0.5
@@ -38,7 +38,7 @@ date,day.of.week,car.count,weather
 2010-02-06,saturday,89.5,-0.2
 2010-02-07,sunday,93.7,0.1
 2010-02-08,monday,103.9,-0.2
-2010-02-09,tuesday,1.1,0.4
+2010-02-09,tuesday,100,0.4
 2010-02-10,wednesday,116.7,1.3
 2010-02-11,thursday,53.6,2.5
 2010-02-12,friday,125.4,-0.1
@@ -100,7 +100,7 @@ date,day.of.week,car.count,weather
 2010-04-09,friday,174.8,-0.3
 2010-04-10,saturday,101.3,0.4
 2010-04-11,sunday,124.1,0
-2010-04-12,monday,1.1,0.8
+2010-04-12,monday,100,0.8
 2010-04-13,tuesday,178.3,-1.2
 2010-04-14,wednesday,117.9,1.2
 2010-04-15,thursday,86.3,0.5
@@ -166,13 +166,13 @@ date,day.of.week,car.count,weather
 2010-06-14,monday,143.3,1.4
 2010-06-15,tuesday,142.3,-0.1
 2010-06-16,wednesday,129.2,-0.4
-2010-06-17,thursday,1.1,1.6
+2010-06-17,thursday,100,1.6
 2010-06-18,friday,140,-1
 2010-06-19,saturday,138.2,-0.8
 2010-06-20,sunday,139.8,-0.8
 2010-06-21,monday,155.3,0.8
-2010-06-22,tuesday,1.1,-0.5
-2010-06-23,wednesday,1.1,-0.1
+2010-06-22,tuesday,100,-0.5
+2010-06-23,wednesday,100,-0.1
 2010-06-24,thursday,116.4,-1.3
 2010-06-25,friday,150.8,0.1
 2010-06-26,saturday,137.5,1.7
@@ -230,7 +230,7 @@ date,day.of.week,car.count,weather
 2010-08-17,tuesday,105.2,-0.1
 2010-08-18,wednesday,142.2,1.6
 2010-08-19,thursday,126,-1.9
-2010-08-20,friday,1.1,-0.1
+2010-08-20,friday,100,-0.1
 2010-08-21,saturday,143,0.1
 2010-08-22,sunday,132,0.1
 2010-08-23,monday,99.6,0.6
@@ -241,7 +241,7 @@ date,day.of.week,car.count,weather
 2010-08-28,saturday,144.3,1
 2010-08-29,sunday,118.4,-0.3
 2010-08-30,monday,178,0.4
-2010-08-31,tuesday,1.1,0
+2010-08-31,tuesday,100,0
 2010-09-01,wednesday,157.7,0.7
 2010-09-02,thursday,117.1,0.3
 2010-09-03,friday,141.2,-0.8
@@ -275,13 +275,13 @@ date,day.of.week,car.count,weather
 2010-10-01,friday,157.1,0.4
 2010-10-02,saturday,154.6,0
 2010-10-03,sunday,144.9,0.6
-2010-10-04,monday,1.1,-0.7
-2010-10-05,tuesday,1.1,0
+2010-10-04,monday,100,-0.7
+2010-10-05,tuesday,100,0
 2010-10-06,wednesday,161.8,0.4
-2010-10-07,thursday,1.1,1.1
+2010-10-07,thursday,100,1.1
 2010-10-08,friday,149.8,0.4
 2010-10-09,saturday,181.1,1.1
-2010-10-10,sunday,1.1,0
+2010-10-10,sunday,100,0
 2010-10-11,monday,207,-0.4
 2010-10-12,tuesday,135.8,-3.2
 2010-10-13,wednesday,176.8,0.4
@@ -312,7 +312,7 @@ date,day.of.week,car.count,weather
 2010-11-07,sunday,146.1,-1.5
 2010-11-08,monday,142.9,-0.2
 2010-11-09,tuesday,173.6,0
-2010-11-10,wednesday,1.1,0.8
+2010-11-10,wednesday,100,0.8
 2010-11-11,thursday,178.9,-0.6
 2010-11-12,friday,134.5,0.1
 2010-11-13,saturday,113.6,1
@@ -441,7 +441,7 @@ date,day.of.week,car.count,weather
 2011-03-16,wednesday,138.8,-2
 2011-03-17,thursday,131.4,-1.7
 2011-03-18,friday,162.8,1.2
-2011-03-19,saturday,1.1,-0.2
+2011-03-19,saturday,100,-0.2
 2011-03-20,sunday,183.2,-0.6
 2011-03-21,monday,159.6,-1.1
 2011-03-22,tuesday,131.3,1.1
@@ -503,7 +503,7 @@ date,day.of.week,car.count,weather
 2011-05-17,tuesday,128.3,1.3
 2011-05-18,wednesday,212,-0.1
 2011-05-19,thursday,137,0.3
-2011-05-20,friday,1.1,-0.7
+2011-05-20,friday,100,-0.7
 2011-05-21,saturday,210.3,-0.5
 2011-05-22,sunday,190.8,-0.7
 2011-05-23,monday,166.3,0.2
@@ -597,7 +597,7 @@ date,day.of.week,car.count,weather
 2011-08-19,friday,150.8,1.1
 2011-08-20,saturday,153.2,1.1
 2011-08-21,sunday,155,0.8
-2011-08-22,monday,1.1,1.4
+2011-08-22,monday,100,1.4
 2011-08-23,tuesday,166,-0.6
 2011-08-24,wednesday,155.3,-0.2
 2011-08-25,thursday,202.9,-0.7
@@ -633,7 +633,7 @@ date,day.of.week,car.count,weather
 2011-09-24,saturday,209.7,-1.1
 2011-09-25,sunday,195.5,0
 2011-09-26,monday,196.3,-1.2
-2011-09-27,tuesday,1.1,-0.3
+2011-09-27,tuesday,100,-0.3
 2011-09-28,wednesday,209.5,0.6
 2011-09-29,thursday,228.3,-0.2
 2011-09-30,friday,179.3,0.4
@@ -698,8 +698,8 @@ date,day.of.week,car.count,weather
 2011-11-28,monday,149.1,0.6
 2011-11-29,tuesday,162.1,1.6
 2011-11-30,wednesday,176.4,0.4
-2011-12-01,thursday,1.1,-0.6
-2011-12-02,friday,1.1,0.4
+2011-12-01,thursday,100,-0.6
+2011-12-02,friday,100,0.4
 2011-12-03,saturday,165.7,-0.2
 2011-12-04,sunday,167.4,0.5
 2011-12-05,monday,191.1,0.3
@@ -772,7 +772,7 @@ date,day.of.week,car.count,weather
 2012-02-10,friday,198.7,0.7
 2012-02-11,saturday,189.3,-0.7
 2012-02-12,sunday,203.5,-0.8
-2012-02-13,monday,1.1,-0.9
+2012-02-13,monday,100,-0.9
 2012-02-14,tuesday,198.8,1.3
 2012-02-15,wednesday,184.5,3.1
 2012-02-16,thursday,204.3,0
@@ -884,7 +884,7 @@ date,day.of.week,car.count,weather
 2012-06-01,friday,195.6,-1
 2012-06-02,saturday,178.4,0.9
 2012-06-03,sunday,149.9,1.3
-2012-06-04,monday,1.1,0.8
+2012-06-04,monday,100,0.8
 2012-06-05,tuesday,160.1,-0.7
 2012-06-06,wednesday,146.6,0.4
 2012-06-07,thursday,194.7,-1.5
@@ -900,7 +900,7 @@ date,day.of.week,car.count,weather
 2012-06-17,sunday,166.5,1.4
 2012-06-18,monday,207.9,0.4
 2012-06-19,tuesday,205.3,-0.9
-2012-06-20,wednesday,1.1,-0.4
+2012-06-20,wednesday,100,-0.4
 2012-06-21,thursday,232.1,-0.2
 2012-06-22,friday,215.4,0.4
 2012-06-23,saturday,189.8,1.3
@@ -1031,7 +1031,7 @@ date,day.of.week,car.count,weather
 2012-10-26,friday,225.9,0.7
 2012-10-27,saturday,164.8,-0.4
 2012-10-28,sunday,188.2,-1
-2012-10-29,monday,1.1,0.4
+2012-10-29,monday,100,0.4
 2012-10-30,tuesday,189.7,0.7
 2012-10-31,wednesday,210.6,-0.7
 2012-11-01,thursday,213.9,1.9
@@ -1141,7 +1141,7 @@ date,day.of.week,car.count,weather
 2013-02-13,wednesday,206.3,-0.3
 2013-02-14,thursday,186.4,-0.2
 2013-02-15,friday,177.4,0
-2013-02-16,saturday,1.1,0
+2013-02-16,saturday,100,0
 2013-02-17,sunday,191.6,-0.9
 2013-02-18,monday,194.8,1
 2013-02-19,tuesday,192.6,-1
@@ -1272,7 +1272,7 @@ date,day.of.week,car.count,weather
 2013-06-24,monday,201.8,0.2
 2013-06-25,tuesday,207.7,1.5
 2013-06-26,wednesday,231.4,-1.3
-2013-06-27,thursday,1.1,0.9
+2013-06-27,thursday,100,0.9
 2013-06-28,friday,202.8,-0.3
 2013-06-29,saturday,208.2,-1.8
 2013-06-30,sunday,194.8,0.7
@@ -1337,7 +1337,7 @@ date,day.of.week,car.count,weather
 2013-08-28,wednesday,172,2.7
 2013-08-29,thursday,191.6,-0.8
 2013-08-30,friday,164.5,0.8
-2013-08-31,saturday,1.1,-1
+2013-08-31,saturday,100,-1
 2013-09-01,sunday,201.7,0.1
 2013-09-02,monday,186.1,1.5
 2013-09-03,tuesday,185.4,0.3
@@ -1520,7 +1520,7 @@ date,day.of.week,car.count,weather
 2014-02-27,thursday,138.6,0.3
 2014-02-28,friday,158.9,0.2
 2014-03-01,saturday,179.6,0.1
-2014-03-02,sunday,1.1,-0.9
+2014-03-02,sunday,100,-0.9
 2014-03-03,monday,167.7,0.1
 2014-03-04,tuesday,192.3,-1.3
 2014-03-05,wednesday,147,0.2
@@ -1718,7 +1718,7 @@ date,day.of.week,car.count,weather
 2014-09-13,saturday,167.6,-0.1
 2014-09-14,sunday,166.1,0.6
 2014-09-15,monday,134.5,0.6
-2014-09-16,tuesday,1.1,-0.3
+2014-09-16,tuesday,100,-0.3
 2014-09-17,wednesday,144.5,1
 2014-09-18,thursday,124.3,-1.1
 2014-09-19,friday,132.8,0.8

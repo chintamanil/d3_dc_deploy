@@ -234,7 +234,7 @@ angular.module("d3_data").controller "D3jsCtrl", ($scope) ->
 			, (d) ->
 				numberFormat d.close - d.open
 			, (d) ->
-				d.volume
+				 d.volume
 			 ]).sortBy((d) ->
 				d.dd
 			).order(d3.ascending).renderlet (table) ->
