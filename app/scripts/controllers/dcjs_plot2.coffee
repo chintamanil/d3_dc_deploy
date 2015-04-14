@@ -63,7 +63,7 @@ angular.module("d3_data").controller "OrbitalCsvCtrl2", ($scope) ->
 
 		# dimension by month
 		s.moveMonths = ndx.dimension((d) ->
-			d.month # day instead of Month
+			d.dd # day instead of Month
 		)
 
 		# group by total movement within month
