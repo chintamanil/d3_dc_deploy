@@ -20,37 +20,51 @@ angular.module("d3_data").controller "OrbitalCsvCtrl2", ($scope) ->
 		all = s.all = ndx.groupAll()
 		# dimension by year
 		s.yearlyDimension = ndx.dimension((d) ->
-			d3.time.month(d.month).getMonth()
+			monthNames = [
+			  'Jan'
+			  'Feb'
+			  'Mar'
+			  'April'
+			  'May'
+			  'June'
+			  'July'
+			  'Aug'
+			  'Sept'
+			  'Oct'
+			  'Nov'
+			  'Dec'
+			]
+			monthNames[d3.time.month(d.month).getMonth()]
 		)
 		# maintain running tallies by year as filters are applied or removed
 		# callback for when data is added to the current filter results
 		s.yearlyPerformanceGroup = s.yearlyDimension.group().reduce((p, v) ->
 			++p.count
 			p.absGain += v.car_count
-#			p.fluctuation += Math.abs(v.close - v.open)
+			p.fluctuation += Math.abs(100-v.car_count)
 			p.sumIndex += v.car_count
 			p.avgIndex = p.sumIndex / p.count
-			p.percentageGain = (p.absGain / p.avgIndex) * 100
-#			p.fluctuationPercentage = (p.fluctuation / p.avgIndex) * 100
+			p.percentageGain = (p.absGain / p.avgIndex)
+			p.fluctuationPercentage = (p.fluctuation / p.avgIndex)
 			p
 
 		# callback for when data is removed from the current filter results
 		, (p, v) ->
 			--p.count
 			p.absGain -= v.car_count
-#			p.fluctuation -= Math.abs(v.close - v.open)
+			p.fluctuation -= Math.abs(100-v.car_count)
 			p.sumIndex -= v.car_count
 			p.avgIndex = p.sumIndex / p.count
-			p.percentageGain = (p.absGain / p.avgIndex) * 100
-#			p.fluctuationPercentage = (p.fluctuation / p.avgIndex) * 100
+			p.percentageGain = (p.absGain / p.avgIndex)
+			p.fluctuationPercentage = (p.fluctuation / p.avgIndex)
 			p
 
 		# initialize p
 		, ->
 			count: 0
 			absGain: 0
-#			fluctuation: 0
-#			fluctuationPercentage: 0
+			fluctuation: 0
+			fluctuationPercentage: 0
 			sumIndex: 0
 			avgIndex: 0
 			percentageGain: 0
