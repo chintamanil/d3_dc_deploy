@@ -7,6 +7,7 @@ var mountFolder = function (connect, dir) {
 module.exports = function (grunt) {
   // load all grunt tasks
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+  grunt.loadNpmTasks('grunt-awsebtdeploy');
 
   // configurable paths
   var yeomanConfig = {
@@ -25,6 +26,20 @@ module.exports = function (grunt) {
       haml: {
         files: ['<%= yeoman.app %>/views/{,*/}*.haml'],
         tasks: ['haml:dist']
+      },
+      awsebtdeploy: {
+        demo: {
+          options: {
+            region: 'eu-west-1',
+            applicationName: 'orbital-d3-dc',
+            environmentCNAME: 'ec2-52-8-49-234.us-west-1.compute.amazonaws.com',
+           // sourceBundle: "path/to/source/bundle.zip"
+            // or via the AWS_ACCESS_KEY_ID environment variable
+            //accessKeyId: "your access ID",
+            // or via the AWS_SECRET_ACCESS_KEY environment variable
+            secretAccessKey: "MIIEpAIBAAKCAQEAhyVhpypYNZvqr3N255oIlrDcEikN9uj4/v2J4dGHyZtxSHnAE+CWFq5Y/uZHkgCsgqSf8v2QT57HoaxX9OLiPR9Ih3hN3hZU/OGgOTzvI6fKCItJ8fwtk9hiYciEjizfJnT6yFViqq1mdGb/OpdYda0YyEyVtUrE5RaGpD/77MfmJ76/gDZmOP3TZZWW5d1AoGyKSsL5I7Gh0NgGsECpq0ne6DNAY9XomoIpSRCEqizGEYu8f17xiMdiOfiznatGwWHHehF07I09N6JS9SH8GNBBUYubGXB/JMdMtwQ68OtCeef4qHiUvNrammMYff/kvrtMbl6Q6oLdsgiDhSO7uQIDAQABAoIBAF5v/ME3kdREU8auxNQqiv3iMKZwEdYMDpMA0K0AIgb7nDms+k/pjHfk9UOJ31FjLylLqInALmu05INRT1VMhhN4HNKtepxKtrDPaYsVzXX49fDqhI2YTrEVcAoseJRxPq486FG9eOkTqpiEsK1cvO/eOYceHS9GRDhheUyleYGHVHZKYBOdEtlAjDY4IyIsvaUZG8mVV2VtMEkWoXr2BdtDlEZ2pSCzv7STfuGCbXByoOVeqC7bSKjB5W+NsWrDh/qUVf1yYpZaNcBF/qppXXF08jwU5AHzsdI3MnDRb62xJ5f+O+KMQ0zwwn/wrdcoZnrth/g44ThPIdwlKg1V81ECgYEA5vmO7zChMugvc+xSLaqYBNBhI0UFVENwePZBxH1Dmaw/hKisqgkmsTRB3KCIty3OD6/I9vvuYZJZ/AG9uRNmNCcshChvDZmkO4OSb0Ac68nY+OdP843exKfVSaM2yK9PMyAeF0xSCEm5XzphZ0o9WfkqfymeA/P46C2d/XTaAr8CgYEAlcndIqySXowE1XO9CsUTdhKYT3ZW8F7PHSWWq0hM59SX07gB8yyj5mMgDy9aqeUanl4BwEXRhKXwdid80tN+XbhkcH+gev8faHTI24sd7cqJVx9DxUpeewUF13mnNTfg2sagg9LWOJfHTps4dt2jkHR3OmXoRr7zLFkcNOH694cCgYEAhGfxQTrOXcFuWnTRky4lITVXSgGqEWjrk9wPTZVFaFWuv9x1xq+iR5keXFyGowOWCbYKbVN0juh3vxg8a1kskJ8YTNZk+xXlaNx+2FmXeq9mOyFW2tasKm3PvfvbTuX4b+VseoycxfWFV4q/BZgwXWCRtP3lgHyeZnKoDACtbT8CgYAOjMM8QQMex/8YNNviFe6kA35kCZy8UJlRvXr7PFSsGEx/NlqKIoXxNSPCFdl6s1R4ma0V3jJR7kSDVaacXArkU6r9+oe+KtYEMYPpP4Qyuv/IRLMykNzIml5M5fZGBx2CYtTouSwx5xxnGFDNyw2+VHHYbFm5tYatgiJpSKI2NQKBgQCy2J422lc6FCPZqRcbHJvsbpOt4Q8jT9wgrLL7mwdpHDx/Rr1XS9vfC9RRmE/5CvzFkTDbJSlY369yKdXT8H/5vu6u5uaBQIYe+JXb1kDibFn4LOQuAvCfoR6r+ahrz06UKcyXc58MPbmR48MBPAanKXahdKtLVQzM8ehTxS56CA=="
+          }
+        }
       },
       coffee: {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.coffee'],
@@ -336,6 +351,5 @@ module.exports = function (grunt) {
     'rev',
     'usemin'
   ]);
-
   grunt.registerTask('default', ['build']);
 };

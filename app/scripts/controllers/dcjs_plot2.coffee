@@ -1,5 +1,14 @@
 
-angular.module("d3_data").controller "OrbitalCsvCtrl2", ($scope) ->
+angular.module("d3_data").controller "OrbitalCsvCtrl2", ($scope,$location, $firebaseObject) ->
+  	#url = 'https://incandescent-torch-1684.firebaseio.com/'
+	# url = "https://orbital-data-mani.firebaseio.com/"
+ #  	fireRef = new Firebase(url)
+	# d3.xhr("https://orbital-data-mani.firebaseio.com/").responseType('arraybuffer').get (error, data) ->
+	#  	if error
+ #      		alert 'error'
+	#   	loaded_array_buffer = data.response
+	#   	console.log loaded_array_buffer
+
 
 	d3.csv "orbital_data.csv", (data) ->
 
