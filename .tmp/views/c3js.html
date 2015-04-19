@@ -1,0 +1,17 @@
+<general-navigation></general-navigation>
+<div class='hero-unit post'>
+<h1>'c3js!</h1>
+<p>You now have</p>
+<h1>Sample directives</h1>
+<h2>Most basic sample</h2>
+<c3chart bindto-id='chart1'>
+<chart-column column-id='data-1' column-type='line' column-values='30,200,100,400,150,250'>
+</c3chart>
+<h2>Using json based data coming from the model</h2>
+<c3chart bindto-id='chart2' chart-columns='datacolumns' chart-data='datapoints'></c3chart>
+<h2>Add meaning to the x axis and change names and colors</h2>
+<c3chart bindto-id='chart3' chart-columns='datacolumns2' chart-data='datapoints2' chart-x='datax2'></c3chart>
+<h2>Chart with new Library</h2>
+<angularchart dataset='dataset' options='options' schema='schema'></angularchart>
+</div>
+<general-footer></general-footer>

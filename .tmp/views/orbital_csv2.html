@@ -1,0 +1,63 @@
+<general-navigation></general-navigation>
+<div class='hero-unit post'>
+<h1>'Orbital CSV Data!</h1>
+<h2>Orbital Data</h2>
+<div class='row'>
+<div class='col-sm-12 col-md-12 dc-chart' dc-chart='bubbleChart' dc-color-domain='[-500, 500]' dc-colors='colorbrewer.RdYlGn[9]' dc-dimension='yearlyDimension' dc-elastic-x='true' dc-elastic-y='true' dc-group='yearlyPerformanceGroup' dc-height='250' dc-margins='{top: 10, right: 50, bottom: 30, left: 40}' dc-max-bubble-relative-size='0.3' dc-options='bubbleChartOptions' dc-r='d3.scale.linear().domain([0, 4000])' dc-render-horizontal-grid-lines='true' dc-render-label='true' dc-render-title='true' dc-render-vertical-grid-lines='true' dc-transition-duration='1500' dc-width='990' dc-x-axis-padding='500' dc-x-axislabel="'Index Gain'" dc-x='d3.scale.linear().domain([-250, 250])' dc-y-axis-label="'Index Gain %'" dc-y-axis-padding='5' dc-y='d3.scale.linear().domain([-100, 100])' id='bubbleChart1'><strong>Monthly Performance</strong>(radius: fluctuation/index ratio, color: gain/loss)
+<a class='reset'>reset</a>
+<div class='clearfix'></div>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-6 col-md-3 dc-chart' dc-chart='pieChart' dc-dimension='gainOrLoss' dc-group='gainOrLossGroup' dc-height='180' dc-radius='80' dc-width='180' id='pieChart1'>
+<strong>Weather Variation</strong>
+<a class='reset'>reset</a>
+<div class='clearfix'></div>
+</div>
+<div class='col-sm-6 col-md-3 dc-chart' dc-chart='pieChart' dc-dimension='quarter' dc-group='quarterGroup' dc-height='180' dc-inner-radius='30' dc-radius='80' dc-width='180' id='pieChart2'>
+<strong>Quarters</strong>
+<a class='reset'>reset</a>
+<div class='clearfix'></div>
+</div>
+<div class='col-sm-6 col-md-3 dc-chart' dc-chart='rowChart' dc-dimension='dayOfWeek' dc-elastic-x='true' dc-group='dayOfWeekGroup' dc-height='180' dc-margins='{top: 20, left: 10, right: 10, bottom: 20}' dc-ordinal-colors="['#3182bd', '#6baed6', '#9ecae1', '#c6dbef', '#dadaeb','#dadafc', '#dbecfb']" dc-post-setup-chart='dayOfWeekPostSetupChart' dc-width='180' id='rowChart1'>
+<strong>Day of Week</strong>
+<a class='reset'>reset</a>
+<div class='clearfix'></div>
+</div>
+<div class='col-sm-6 col-md-3 dc-chart' dc-always-use-rounding='true' dc-center-bar='true' dc-chart='barChart' dc-dimension='fluctuation' dc-elastic-y='true' dc-gap='1' dc-group='fluctuationGroup' dc-height='180' dc-margins='{top: 10, right: 10, bottom: 20, left: 10}' dc-options='fluctuationChartOptions' dc-post-setup-chart='fluctuationChartPostSetupChart' dc-render-horizontal-grid-lines='true' dc-round='dc.round.floor' dc-x='d3.scale.linear().domain([-25, 25])' id='barChart1'>
+<strong>Car Count Fluctuation(%)</strong>
+<span class='reset'>
+range:
+<span class='filter'></span>
+</span>
+<a class='reset'>reset</a>
+</div>
+</div>
+<div class='row'>
+<div class='dc-chart' dc-brush-on='false' dc-chart='lineChart' dc-dimension='moveMonths' dc-elastic-y='true' dc-height='200' dc-legend='dc.legend().x(800).y(10).itemHeight(13).gap(5)' dc-margins='{top: 50, right: 50, bottom: 25, left: 40}' dc-mouse-zoomable='true' dc-options='moveChartOptions' dc-post-setup-chart='moveChartPostSetupChart' dc-range-chart='volumeChart' dc-render-area='true' dc-render-horizontal-grid-lines='true' dc-round='d3.time.month.round' dc-transition-duration='200' dc-width='990' dc-x-units='d3.time.day' dc-x='d3.time.scale().domain([Date(2010, 0, 1), Date(2011, 0, 1)])' id='lineChart'>
+<div class='clearfix'></div>
+</div>
+</div>
+<div class='row'>
+<div class='dc-chart' dc-always-use-rounding='true' dc-center-bar='true' dc-chart='barChart' dc-dimension='moveMonths' dc-gap='Date(1985, 0, 1)' dc-group='volumeByMonthGroup' dc-height='40' dc-margins='{top: 0, right: 50, bottom: 20, left: 40}' dc-name="'volumeChart'" dc-round='d3.time.month.round' dc-width='990' dc-x-units='d3.time.day' dc-x='d3.time.scale().domain([Date(2010, 0, 1), Date(2011, 0, 1)])' id='barChart2'></div>
+<p class='pull-right'>select a time range to zoom in</p>
+</div>
+<div class='row'>
+<div>
+<div class='dc-data-count' dc-chart='dataCount' dc-dimension='ndx' dc-group='all' id='resetme'><span class='filter-count'></span>&nbsp;selected out of<span class='total-count'></span>&nbsp;records 
+<a ng-click='resetAll()'>Reset All</a>
+</div>
+</div>
+<table class='table table-hover dc-data-table' dc-chart='dataTable' dc-dimension='dateDimension' dc-group='tableGroup' dc-post-setup-chart='tablePostSetupChart' dc-size='90' id='tableChart1'>
+<thead>
+<tr class='header'>
+<th>Date</th>
+<th>Day</th>
+<th>Weather</th>
+<th>Car Count</th>
+</tr>
+</thead>
+</table>
+</div>
+</div>
+<general-footer></general-footer>
