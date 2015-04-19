@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 *.html  eol=lf
 *.css   eol=lf
 *.js    eol=lf
 *.md    eol=lf
 *.json  eol=lf
 *.yml   eol=lf
+=======
+*.html  eol=lf
+*.css   eol=lf
+*.js    eol=lf
+*.md    eol=lf
+*.json  eol=lf
+*.yml   eol=lf
+>>>>>>> 7ee69222dcda2d7d015aafb91474dac2d1c5dd8a
