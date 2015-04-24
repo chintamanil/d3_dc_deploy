@@ -8,8 +8,8 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
-app.engine('html', require('ejs').renderFile);
-app.set('view engine', 'html');
+// app.set('view engine', 'html');
+// app.engine('html', require('ejs').renderFile);
 
 var app = express();
 app.use(express.static(__dirname + '/'));
@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.set('view engine', 'ejs');
 app.use('/', routes);
 app.use('/users', users);
 
